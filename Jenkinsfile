@@ -8,7 +8,7 @@ pipeline{
         }
         stage('Execute Ansible'){
             steps{
-                ansiblePlaybook become: true, credentialsId: 'ubuntu11', installation: 'ansible', inventory: 'dev.inv', playbook: 'apache.yml'
+                ansiblePlaybook credentialsId: 'ubuntu11', disableHostKeyChecking: true, installation: 'ansible', inventory: 'dev.inv', playbook: 'apache.yml'
                 }
         }
             
