@@ -1,2 +1,2 @@
 [webservers]
-13.233.229.18 remote_user=ubuntu-user 
+13.233.229.18 ubuntu=ubuntu 
