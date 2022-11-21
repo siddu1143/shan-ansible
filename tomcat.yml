@@ -19,7 +19,7 @@
  
     - name: Install JAVA
       apt:
-        name: default-jdk
+        name: default-jre
         state: present
  
  
